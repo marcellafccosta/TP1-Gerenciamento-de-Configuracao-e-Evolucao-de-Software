@@ -1,10 +1,10 @@
-from cliente import Cliente
-from produto import Produto
-from pedido import Pedido
-from carrinho import Carrinho
-from estoque import Estoque
-from pagamento import Pagamento
-from entrega import Entrega
+from .cliente import Cliente
+from .produto import Produto
+from .pedido import Pedido
+from .carrinho import Carrinho
+from .estoque import Estoque
+from .pagamento import Pagamento
+from .entrega import Entrega
 
 class Loja:
     def __init__(self):

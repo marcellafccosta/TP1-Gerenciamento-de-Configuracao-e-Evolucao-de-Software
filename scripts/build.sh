@@ -49,13 +49,13 @@ echo -e "\nEtapa 2: Validação de Sintaxe Python"
 echo "===================================="
 
 log_info "Verificando sintaxe de todos os arquivos Python..."
-for file in *.py; do
+for file in src/loja_online/*.py; do
     if [ -f "$file" ]; then
         python3 -m py_compile "$file" || {
             log_error "Erro de sintaxe em $file"
             exit 1
         }
-        log_info "$file - sintaxe válida"
+        log_info "$(basename "$file") - sintaxe válida"
     fi
 done
 
@@ -65,12 +65,12 @@ echo -e "\nEtapa 3: Verificação de Execução"
 echo "================================"
 
 log_info "Testando execução da aplicação..."
-if python3 main.py > /dev/null 2>&1; then
+if PYTHONPATH=src python3 -m loja_online.main > /dev/null 2>&1; then
     log_info "Aplicação executa sem erros"
 else
     log_error "Aplicação falhou na execução"
     log_info "Executando novamente para mostrar erro..."
-    python3 main.py
+    PYTHONPATH=src python3 -m loja_online.main
     exit 1
 fi
 

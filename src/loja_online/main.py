@@ -1,5 +1,5 @@
-from loja import Loja
-from utilitarios import Utilitarios
+from .loja import Loja
+from .utilitarios import Utilitarios
 
 def main():
     loja = Loja()

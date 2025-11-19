@@ -1,12 +1,15 @@
-.PHONY: install build clean run validate help
+.PHONY: install build clean run validate help dev test-local
 
 help:
-	@echo "Available build commands:"
+	@echo "Loja Online TP1 - Build Commands"
+	@echo "================================"
 	@echo "  install      - Install build dependencies"
-	@echo "  validate     - Validate Python syntax"
+	@echo "  validate     - Validate Python syntax" 
 	@echo "  build        - Build package"
 	@echo "  clean        - Clean build artifacts"
 	@echo "  run          - Run the application"
+	@echo "  dev          - Setup development environment"
+	@echo "  test-local   - Run local build test"
 
 install:
 	pip install --upgrade pip
@@ -14,24 +17,30 @@ install:
 
 validate:
 	@echo "Validating Python syntax..."
-	python3 -m py_compile *.py
+	python3 -m py_compile src/loja_online/*.py
 	@echo "Syntax validation completed"
 
-build:
+build: 
 	@echo "Building package..."
 	python3 -m build
 	@echo "Package build completed"
-	@echo "Generated artifacts:"
 	@ls -la dist/
 
 clean:
-	rm -rf build/
-	rm -rf dist/
-	rm -rf *.egg-info/
-	find . -type d -name __pycache__ -exec rm -rf {} +
-	find . -type f -name "*.pyc" -delete
+	rm -rf build/ dist/ *.egg-info/
+	find . -name __pycache__ -exec rm -rf {} + 2>/dev/null || true
+	find . -name "*.pyc" -delete
 	@echo "Build artifacts cleaned"
 
 run:
 	@echo "Running application..."
-	python3 main.py
+	PYTHONPATH=src python3 -m loja_online.main
+
+dev:
+	@echo "Setting up development environment..."
+	pip install -e .
+	@echo "Development environment ready!"
+
+test-local:
+	@echo "Running local build test..."
+	./scripts/build.sh

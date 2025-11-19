@@ -38,12 +38,12 @@ jobs:
 
     - name: Validate Python syntax
       run: |
-        python -m py_compile *.py
+        python -m py_compile src/loja_online/*.py
         echo "Syntax validation completed"
 
     - name: Verify application execution
       run: |
-        python main.py
+        PYTHONPATH=src python -m loja_online.main
         echo "Application execution verified"
 
     - name: Build package

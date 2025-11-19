@@ -6,12 +6,13 @@ setup(
     description="Sistema simples de loja online",
     author="Equipe TP1",
     author_email="equipe@exemplo.com",
-    packages=find_packages(),
+    package_dir={"": "src"},
+    packages=find_packages(where="src"),
     python_requires=">=3.8",
     install_requires=[],
     entry_points={
         "console_scripts": [
-            "loja-online=main:main",
+            "loja-online=loja_online.main:main",
         ],
     },
     classifiers=[
