@@ -7,3 +7,8 @@ pytest>=7.4.0
 pytest-cov>=4.1.0
 pytest-html>=4.1.0
 coverage>=7.3.0
+
+# Dependências de runtime
+Flask>=2.2.5
+# Gunicorn é útil para deployment em serviços como Render
+gunicorn>=20.1.0
