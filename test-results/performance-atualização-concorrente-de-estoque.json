@@ -1,0 +1,12 @@
+{
+  "nome_teste": "Atualização Concorrente de Estoque",
+  "timestamp": "2025-11-23T13:09:50.409010",
+  "metricas": {
+    "quantidade_operacoes": 100,
+    "operacoes_sucesso": 100,
+    "estoque_inicial": 1000,
+    "estoque_final": 500,
+    "estoque_esperado": 500,
+    "tempo_total_segundos": 0.005482912063598633
+  }
+}

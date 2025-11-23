@@ -1,0 +1,10 @@
+{
+  "nome_teste": "Cadastro em Massa de Produtos",
+  "timestamp": "2025-11-23T13:09:50.393330",
+  "metricas": {
+    "quantidade": 1000,
+    "tempo_total_segundos": 0.0005290508270263672,
+    "produtos_por_segundo": 1890177.5574583146,
+    "tempo_medio_ms": 0.0005290508270263672
+  }
+}

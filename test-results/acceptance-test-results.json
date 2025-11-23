@@ -1,0 +1,68 @@
+{
+  "nome_teste": "Fluxo Completo de Compra",
+  "timestamp": "2025-11-23T13:09:50.389542",
+  "passos": [
+    {
+      "passo": "Cadastro de produtos",
+      "sucesso": true,
+      "detalhes": "3 produtos cadastrados",
+      "timestamp": "2025-11-23T13:09:50.390131"
+    },
+    {
+      "passo": "Cadastro de cliente",
+      "sucesso": true,
+      "detalhes": "Cliente: Ana Julia Teixeira",
+      "timestamp": "2025-11-23T13:09:50.390189"
+    },
+    {
+      "passo": "Adicionar ao carrinho",
+      "sucesso": true,
+      "detalhes": "3 itens, Total: R$ 4650.00",
+      "timestamp": "2025-11-23T13:09:50.390276"
+    },
+    {
+      "passo": "Criar pedido",
+      "sucesso": true,
+      "detalhes": "Pedido #1, Total: R$ 4650.00",
+      "timestamp": "2025-11-23T13:09:50.390542"
+    },
+    {
+      "passo": "Processar pagamento",
+      "sucesso": true,
+      "detalhes": "Método: cartao_credito, Status: processado",
+      "timestamp": "2025-11-23T13:09:50.390597"
+    },
+    {
+      "passo": "Confirmar pedido",
+      "sucesso": true,
+      "detalhes": "Pedido confirmado e estoque atualizado",
+      "timestamp": "2025-11-23T13:09:50.390669"
+    },
+    {
+      "passo": "Agendar entrega",
+      "sucesso": true,
+      "detalhes": "Endereço: Rua das Flores, 123 - Belo Horizonte - MG",
+      "timestamp": "2025-11-23T13:09:50.390715"
+    },
+    {
+      "passo": "Registrar histórico",
+      "sucesso": true,
+      "detalhes": "Total gasto: R$ 4650.00",
+      "timestamp": "2025-11-23T13:09:50.390764"
+    },
+    {
+      "passo": "Validações finais",
+      "sucesso": true,
+      "detalhes": "Sistema em estado consistente",
+      "timestamp": "2025-11-23T13:09:50.390792"
+    }
+  ],
+  "sucesso": true,
+  "resumo": {
+    "cliente": "Ana Julia Teixeira",
+    "pedido_id": 1,
+    "total": 4650.0,
+    "itens": 3,
+    "status": "confirmado"
+  }
+}

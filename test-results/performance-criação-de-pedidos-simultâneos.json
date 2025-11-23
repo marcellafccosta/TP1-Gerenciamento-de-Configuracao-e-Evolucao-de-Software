@@ -1,0 +1,15 @@
+{
+  "nome_teste": "Criação de Pedidos Simultâneos",
+  "timestamp": "2025-11-23T13:09:50.396562",
+  "metricas": {
+    "quantidade_pedidos": 100,
+    "pedidos_sucesso": 100,
+    "pedidos_falha": 0,
+    "tempo_total_segundos": 0.00562596321105957,
+    "pedidos_por_segundo": 17774.73407636564,
+    "tempo_medio_ms": 0.006394386291503906,
+    "tempo_minimo_ms": 0.003337860107421875,
+    "tempo_maximo_ms": 0.013828277587890625,
+    "desvio_padrao_ms": 0.002586201426235178
+  }
+}
