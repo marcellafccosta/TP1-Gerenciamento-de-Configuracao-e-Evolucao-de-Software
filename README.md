@@ -1,10 +1,10 @@
 # Sistema de Loja Online - TP1
 
-## 📋 Sobre o Projeto
+## Sobre o Projeto
 
 Sistema completo de loja online desenvolvido para o trabalho prático de Gerenciamento de Configuração e Evolução de Software. Inclui funcionalidades de gerenciamento de produtos, carrinho de compras, processamento de pedidos, pagamentos e entregas.
 
-## 🏗️ Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 .
@@ -44,7 +44,7 @@ Sistema completo de loja online desenvolvido para o trabalho prático de Gerenci
 └── README.md                 # Este arquivo
 ```
 
-## 🚀 Início Rápido
+## Início Rápido
 
 ### Pré-requisitos
 
@@ -76,7 +76,7 @@ make run
 make server
 ```
 
-## 🧪 Testes
+## Testes
 
 ### Para que Servem os Testes
 
@@ -168,25 +168,25 @@ chmod +x scripts/build.sh
 ./scripts/build.sh
 ```
 
-## 📦 Comandos Disponíveis
+## Comandos Disponíveis
 
 Execute `make help` ou `make` para ver todos os comandos:
 
 ```
-📦 CONFIGURAÇÃO:
+CONFIGURAÇÃO:
   make install              Instalar dependências
   make dev                  Configurar ambiente de desenvolvimento
   make clean                Limpar artefatos de build
 
-🔨 BUILD:
+BUILD:
   make build                Executar build completo
   make validate             Validar sintaxe Python
 
-🚀 EXECUÇÃO:
+EXECUÇÃO:
   make run                  Executar aplicação principal
   make server               Executar servidor Flask
 
-🧪 TESTES:
+TESTES:
   make test                 Executar todos os testes
   make test-unit            Executar testes unitários
   make test-integration     Executar testes de integração
@@ -194,7 +194,7 @@ Execute `make help` ou `make` para ver todos os comandos:
   make test-performance     Executar testes de performance
 ```
 
-## 🔄 CI/CD Pipeline
+## CI/CD Pipeline
 
 O projeto possui pipelines automatizados no GitHub Actions:
 
@@ -229,7 +229,7 @@ O projeto possui pipelines automatizados no GitHub Actions:
 - Verificação de health check
 - Rollback em caso de falha
 
-## 🌐 Endpoints da Aplicação
+## Endpoints da Aplicação
 
 ### Health Check
 ```bash
@@ -237,7 +237,7 @@ GET /health
 ```
 Retorna status do servidor: `{"status": "ok"}`
 
-## 📊 Estrutura de Dados
+## Estrutura de Dados
 
 ### Produto
 - ID, nome, descrição, preço, categoria, estoque
@@ -254,7 +254,7 @@ Retorna status do servidor: `{"status": "ok"}`
 ### Entrega
 - ID, pedido, endereço, status, prazo
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Python 3.11**: Linguagem principal
 - **Pytest**: Framework de testes
@@ -262,14 +262,6 @@ Retorna status do servidor: `{"status": "ok"}`
 - **GitHub Actions**: CI/CD
 - **Render**: Plataforma de deploy
 - **Make**: Automação de tarefas
-
-## 👥 Equipe
-
-Desenvolvido pela equipe do TP1 - Gerenciamento de Configuração e Evolução de Software
-
-## 📝 Licença
-
-Este projeto é desenvolvido para fins acadêmicos.
 
 ## 🔗 Links Úteis
 
