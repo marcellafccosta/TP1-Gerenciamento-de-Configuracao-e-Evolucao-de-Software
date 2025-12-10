@@ -55,3 +55,26 @@ class TestProduto:
         """Testa a obtenção do preço do produto"""
         produto = Produto(1, "Notebook", 3000.0)
         assert produto.obter_preco() == 3000.0
+
+    def test_tem_estoque_disponivel_com_estoque_suficiente(self):
+        """Testa a verificação de estoque quando há quantidade suficiente"""
+        produto = Produto(1, "Notebook", 3000.0)
+        produto.definir_estoque(10)
+        assert produto.tem_estoque_disponivel(5) is True
+
+    def test_tem_estoque_disponivel_com_estoque_insuficiente(self):
+        """Testa a verificação de estoque quando não há quantidade suficiente"""
+        produto = Produto(1, "Notebook", 3000.0)
+        produto.definir_estoque(3)
+        assert produto.tem_estoque_disponivel(5) is False
+
+    def test_tem_estoque_disponivel_quantidade_padrao(self):
+        """Testa a verificação de estoque com quantidade padrão (1)"""
+        produto = Produto(1, "Notebook", 3000.0)
+        produto.definir_estoque(1)
+        assert produto.tem_estoque_disponivel() is True
+
+    def test_tem_estoque_disponivel_sem_estoque(self):
+        """Testa a verificação de estoque quando está zerado"""
+        produto = Produto(1, "Notebook", 3000.0)
+        assert produto.tem_estoque_disponivel() is False
