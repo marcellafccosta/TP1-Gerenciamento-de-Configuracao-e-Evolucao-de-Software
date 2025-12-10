@@ -19,3 +19,6 @@ class Produto:
 
     def obter_preco(self):
         return self.preco
+        
+    def tem_estoque_disponivel(self, quantidade=1):
+        return self.estoque >= quantidade
